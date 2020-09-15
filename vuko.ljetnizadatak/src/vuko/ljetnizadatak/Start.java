@@ -1,12 +1,12 @@
 package vuko.ljetnizadatak;
 
+import java.awt.Desktop;
+import java.net.URI;
 import java.util.List;
 
 import javax.swing.JOptionPane;
 
-import com.sun.java.swing.action.OpenAction;
-
-import edunova.Start;
+//za izlistavanje stavivi TO STRING
 
 public class Start {
 
@@ -23,8 +23,8 @@ public class Start {
 		System.out.println("2. Unos novoga");
 		System.out.println("3. Promjena");
 		System.out.println("4. Brisanje");
-		System.out.println("5. Izlaz iz programa");
-		//System.out.println("6. Otvaranje ERA dijagrama na githubu");
+		System.out.println("5. Otvaranje ERA dijagrama na githubu");
+		System.out.println("6. Izlaz iz programa");
 		izvedi();
 		
 		
@@ -76,11 +76,31 @@ public class Start {
             izvedi4();
             break;
 			}
+		case 5:{
+			gitHub();
+			izbornik();
+		}
 		default:
 			break;
 		}
 	}
 	
+	private void gitHub() {
+		 adresa("https://github.com/MVuko123/hellojp22/blob/master/era.jpg");
+		
+	}
+
+	private void adresa(String url) {
+		try {
+			Desktop d = Desktop.getDesktop();
+			d.browse(new URI(url));
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
 	private void izvedi2() {
 		switch(Pomocno.ucitajBroj("Odaberite broj")) {
 		case 1:{
