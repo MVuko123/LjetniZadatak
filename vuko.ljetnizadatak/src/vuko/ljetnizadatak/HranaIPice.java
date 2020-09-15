@@ -41,7 +41,10 @@ public class HranaIPice {
 		this.cijena = cijena;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return naziv;
+	}
 	
 
 }
