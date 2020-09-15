@@ -71,6 +71,9 @@ public class Karta {
 		this.red = red;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return red;
+	}
 
 }
