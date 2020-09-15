@@ -61,7 +61,10 @@ public class Film {
 		this.ocjena = ocjena;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return naziv + " " + redatelj;
+	}
 	
 
 }
