@@ -61,5 +61,8 @@ public class Kupac {
 		this.dob = dob;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return prezime + " " + ime + " " + spol;
+	}
 }
