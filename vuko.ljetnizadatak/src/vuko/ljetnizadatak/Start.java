@@ -6,7 +6,7 @@ import java.util.List;
 
 import javax.swing.JOptionPane;
 
-//za izlistavanje stavivi TO STRING
+
 
 public class Start {
 
@@ -24,7 +24,8 @@ public class Start {
 		System.out.println("3. Promjena");
 		System.out.println("4. Brisanje");
 		System.out.println("5. Otvaranje ERA dijagrama na githubu");
-		System.out.println("6. Izlaz iz programa");
+		System.out.println("6. Otvaranje koda na githubu");
+		System.out.println("7. Izlaz iz programa");
 		izvedi();
 		
 		
@@ -80,11 +81,20 @@ public class Start {
 			gitHub();
 			izbornik();
 		}
+		case 6:{
+			gitHub1();
+			izbornik();
+		}
 		default:
 			break;
 		}
 	}
 	
+	private void gitHub1() {
+		adresa("https://github.com/MVuko123/LjetniZadatak");
+		
+	}
+
 	private void gitHub() {
 		 adresa("https://github.com/MVuko123/hellojp22/blob/master/era.jpg");
 		
